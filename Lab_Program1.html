@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html><head><title>Lab Program 1</title>
+    <style>
+    .title{
+    top: 25px;
+border-radius: 10px;
+margin-bottom: 50px;
+text-align: center;
+width: 400px;
+color:#059bff;
+border:dashed red 2px;
+}
+
+    td{
+        background-color: white;
+    }
+    input[type="text"]{
+    border-radius: 5px;
+    text-align: right;
+    background-color: white;
+    width: 94%;
+    }
+    input[type="button"]{
+    border-radius: 5px;
+    background-color:white;
+    color: red;
+    border-color: rgb(9, 255, 0);
+    width: auto;
+    }
+    </style>
+    <script>
+    function disp(val){
+    document.getElementById('sdm').value+=val;
+    }
+    function clr(){
+    document.getElementById('sdm').value=" ";
+    }
+    function solve(){
+    let x= document.getElementById('sdm').value;
+    let y=eval(x);
+    document.getElementById("sdm").value=y
+    }
+    </script>
+   </head>
+   <body>
+   
+       <center>
+    <div class="title" style="
+       margin-top: auto;
+       margin-bottom: 10px;
+   ">SDM --Javascript lab program</br>Rakshith R-4SU17CS076</div>
+   <!--Ceate a table-->
+    <table border="2" style="
+       padding-top: 10px;
+       padding-left: 10px;
+       padding-right: 10px;
+       padding-bottom: 10px;
+       background-color: #2affe357;
+       width: 544px;
+       height: 244px;
+   ">
+    <tbody><tr>
+    <td>
+       <center>
+    <input type="button" value="CE" onclick="clr()" style="
+       margin-left: 0px;
+       padding-left: 20px;
+       padding-right: 20px;
+   ">
+       </center>
+    </td>
+    <td colspan="3">
+        <center>
+    <input type="text" id="sdm">
+    <center>
+    </center></center></td>
+    </tr>
+    <!-- creating buttons and assign values to it-->
+    <tr>
+    <td>
+<center>
+    <input type="button" value="+" onclick="disp('+')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="1" onclick="disp('1')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="2" onclick="disp('2')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+    <center>
+    <input type="button" value="3" onclick="disp('3')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <center>
+    <input type="button" value="-" onclick="disp('-')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>    
+</td>
+    <td>
+    <center>
+    <input type="button" value="4" onclick="disp('4')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+    <center>
+    <input type="button" value="5" onclick="disp('5')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+    <center>
+    <input type="button" value="6" onclick="disp('6')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>   
+</td>
+    </tr>
+    <tr>
+    <td>
+        <center>
+    <input type="button" value="*" onclick="disp('*')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="7" onclick="disp('7')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="8" onclick="disp('8')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="9" onclick="disp('9')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+    </center>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <center>
+    <input type="button" value="/" onclick="disp('/')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+</center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="." onclick="disp('.')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+    </center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="0" onclick="disp('0')" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+    </center>
+    </td>
+    <td>
+        <center>
+    <input type="button" value="=" onclick="solve()" style="
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+">
+    </center>
+    </td>
+    </tr>
+    </tbody></table>
+   </center>
+   
+   </body></html>
